@@ -1,0 +1,30 @@
+﻿spring.application.name=api-banco-sangre
+server.port=${PORT:8081}
+
+# Base de datos LOCAL de pruebas (H2 embebida, archivo en backend/data/).
+spring.datasource.url=jdbc:h2:file:./data/donavida;AUTO_SERVER=TRUE
+spring.datasource.username=sa
+spring.datasource.password=
+spring.datasource.driver-class-name=org.h2.Driver
+
+# JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+
+# Datos iniciales para H2 local
+spring.sql.init.mode=always
+spring.sql.init.platform=h2
+spring.jpa.defer-datasource-initialization=true
+
+# Consola web de H2
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# Seguridad (JWT) - REEMPLAZA por un texto aleatorio propio de al menos 32 caracteres.
+jwt.secret=CAMBIA_ESTE_SECRETO_POR_UNO_ALEATORIO_DE_32_O_MAS_CARACTERES
+jwt.expiration=86400000
+
+# API de Google Gemini (triaje virtual) - dummy, no se usa en local
+gemini.api.key=sin-usar-local
+
+# Origenes permitidos (CORS) para el frontend local
+cors.allowed-origins=http://localhost:5173
