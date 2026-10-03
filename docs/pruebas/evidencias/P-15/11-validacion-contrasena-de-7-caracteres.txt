@@ -1,0 +1,10 @@
+# P-15 paso 11: Validacion: contrasena de 7 caracteres
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Otro","apellido":"Admin","correo":"otro.admin@test.com","celular":"3100000034","tipoDocumento":"CC","numeroDocumento":"1000000034","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"error":"Error de validación","errores":{"contrasena":"<omitida>"},"timestamp":"2026-10-03T08:27:24.3455749","status":400}

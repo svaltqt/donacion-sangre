@@ -1,0 +1,10 @@
+# P-11 paso 09: Donante intenta crear una solicitud
+# Petición
+POST http://localhost:8081/api/solicitudes
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":1,"tipoSangre":"O-","unidadesNecesarias":3,"urgencia":"ALTA","motivo":"Cirug\u00eda programada","pacienteReferencia":"PAC-001","fechaLimite":"2026-10-10"}
+
+# Respuesta (HTTP 403)
+{"mensaje":"No tienes permisos para esta operación","error":"Acceso denegado","timestamp":"2026-10-03T08:00:39.1664978","status":403}

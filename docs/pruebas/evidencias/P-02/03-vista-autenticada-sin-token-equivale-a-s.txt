@@ -1,0 +1,6 @@
+# P-02 paso 03: Vista autenticada sin token (equivale a sesion cerrada)
+# Petición
+GET http://localhost:8081/api/donaciones/usuario/3/historial
+
+# Respuesta (HTTP 403)
+

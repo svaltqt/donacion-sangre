@@ -1,0 +1,7 @@
+# OBS-03 paso 09: Admin de Medellin ajusta inventario B- de Envigado (+1)
+# Petición
+PATCH http://localhost:8081/api/inventario/ajustar?bancoId=2&tipoSangre=B-&cantidad=1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":4,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesDisponibles":7,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T08:27:13.857616"}

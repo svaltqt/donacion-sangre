@@ -1,0 +1,10 @@
+# P-18 paso 17: Extra: Omar intenta donar otra vez hoy (intervalo de 90 dias)
+# Petición
+POST http://localhost:8081/api/donaciones
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"usuarioId":6,"bancoId":1,"solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450}
+
+# Respuesta (HTTP 409)
+{"mensaje":"El donante debe esperar 90 días más para volver a donar.","error":"Conflicto de datos","timestamp":"2026-10-03T08:10:39.4701936","status":409}

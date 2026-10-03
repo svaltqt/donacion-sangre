@@ -1,0 +1,7 @@
+# P-09 paso 12: Leer solicitud 2
+# Petición
+GET http://localhost:8081/api/solicitudes/2
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":2,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"A+","unidadesNecesarias":5,"unidadesRecibidas":1,"unidadesFaltantes":4,"urgencia":"MEDIA","motivo":"Datos de prueba SD-05","pacienteReferencia":null,"fechaLimite":"2026-10-10","estado":"ACTIVA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T07:57:22.591516","updatedAt":"2026-10-03T08:10:33.655805"}

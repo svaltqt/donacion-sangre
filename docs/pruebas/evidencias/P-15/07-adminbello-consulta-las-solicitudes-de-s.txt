@@ -1,0 +1,7 @@
+# P-15 paso 07: admin.bello consulta las solicitudes de su banco
+# Petición
+GET http://localhost:8081/api/solicitudes/banco/4
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

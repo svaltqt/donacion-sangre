@@ -1,0 +1,10 @@
+# P-06 paso 14: Extra: Dona89 agenda para MANANA (el intervalo hasta esa fecha seria 90 dias)
+# Petición
+POST http://localhost:8081/api/donaciones
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"usuarioId":4,"bancoId":1,"solicitudId":2,"fechaDonacion":"2026-10-04","tipoSangre":"O+","cantidadMl":450}
+
+# Respuesta (HTTP 201)
+{"id":4,"usuarioId":4,"usuarioNombre":"Dona","usuarioApellido":"Ochentaynueve","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":2,"fechaDonacion":"2026-10-04","tipoSangre":"O+","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"PENDIENTE","observaciones":null,"createdAt":"2026-10-03T08:10:31.558001","updatedAt":"2026-10-03T08:10:31.558001"}

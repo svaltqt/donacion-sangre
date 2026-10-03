@@ -1,0 +1,6 @@
+# P-13 paso 07: Contraste: inventario del banco 2
+# Petición
+GET http://localhost:8081/api/inventario/banco/2
+
+# Respuesta (HTTP 200)
+[]

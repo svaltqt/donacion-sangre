@@ -1,0 +1,7 @@
+# P-07 paso 05: Admin de banco intenta listar usuarios (solo SUPER_ADMIN)
+# Petición
+GET http://localhost:8081/api/usuarios
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 403)
+{"mensaje":"No tienes permisos para esta operación","error":"Acceso denegado","timestamp":"2026-10-03T08:00:34.8849813","status":403}

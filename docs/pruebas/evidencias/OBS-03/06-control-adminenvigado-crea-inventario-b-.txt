@@ -1,0 +1,10 @@
+# OBS-03 paso 06: Control: admin.envigado crea inventario B- en su banco
+# Petición
+POST http://localhost:8081/api/inventario
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":2,"tipoSangre":"B-","unidadesDisponibles":6,"unidadesMinimas":5}
+
+# Respuesta (HTTP 201)
+{"id":4,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesDisponibles":6,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T08:27:13.857616"}

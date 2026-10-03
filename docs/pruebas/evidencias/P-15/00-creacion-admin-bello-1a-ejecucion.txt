@@ -1,0 +1,10 @@
+# P-15 (primera ejecucion del script): crear admin.bello - evidencia conservada porque en la repeticion el usuario ya existia
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Admin","apellido":"Bello","correo":"admin.bello@test.com","celular":"3100000032","tipoDocumento":"CC","numeroDocumento":"1000000032","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 201)
+{"id":8,"nombre":"Admin","apellido":"Bello","correo":"admin.bello@test.com","celular":"3100000032","tipoDocumento":"CC","numeroDocumento":"1000000032","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"ADMIN_BANCO","activo":true}

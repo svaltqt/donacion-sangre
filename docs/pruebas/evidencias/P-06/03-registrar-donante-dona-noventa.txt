@@ -1,0 +1,9 @@
+# P-06 paso 03: Registrar donante Dona Noventa
+# Petición
+POST http://localhost:8081/api/v1/auth/registro
+Content-Type: application/json
+
+{"tipoDocumento":"CC","numeroDocumento":"1000000022","nombre":"Dona","apellido":"Noventa","correo":"dona90@test.com","celular":"3000000022","contrasena":"<omitida>","tipoSangre":"O+","fechaNacimiento":"1995-05-10","genero":"FEMENINO","pesoKg":60,"latitud":6.2442,"longitud":-75.5812,"ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"El correo ya está registrado","error":"Error de negocio","timestamp":"2026-10-03T08:10:28.6268723","status":400}

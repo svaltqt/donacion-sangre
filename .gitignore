@@ -47,3 +47,8 @@ backend/src/main/resources/application.properties
 .project
 .classpath
 .factorypath
+backend/data/
+backend/src/main/resources/application.properties
+
+backend/data/
+backend/src/main/resources/application.properties

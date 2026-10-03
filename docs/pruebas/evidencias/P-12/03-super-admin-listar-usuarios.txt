@@ -1,0 +1,7 @@
+# P-12 paso 03: Super admin: listar usuarios
+# Petición
+GET http://localhost:8081/api/usuarios
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":1,"nombre":"Admin","apellido":"Banco","correo":"admin.banco@test.com","celular":"3000000002","tipoDocumento":"CC","numeroDocumento":"1000000002","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"ADMIN_BANCO","activo":true},{"id":2,"nombre":"Super","apellido":"Admin","correo":"super.admin@test.com","celular":"3000000003","tipoDocumento":"CC","numeroDocumento":"1000000003","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"SUPER_ADMIN","activo":true},{"id":3,"nombre":"Ana","apellido":"Prueba","correo":"ana.prueba@test.com","celular":"3000000001","tipoDocumento":"CC","numeroDocumento":"1000000001","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"DONANTE","activo":true}]

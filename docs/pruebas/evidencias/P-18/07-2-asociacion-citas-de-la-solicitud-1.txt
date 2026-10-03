@@ -1,0 +1,7 @@
+# P-18 paso 07: 2. Asociacion: citas de la solicitud 1
+# Petición
+GET http://localhost:8081/api/donaciones/solicitud/1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":5,"usuarioId":6,"usuarioNombre":"Omar","usuarioApellido":"Negativo","usuarioTipoSangre":"O-","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"PENDIENTE","observaciones":null,"createdAt":"2026-10-03T08:10:36.997881","updatedAt":"2026-10-03T08:10:36.997881"}]

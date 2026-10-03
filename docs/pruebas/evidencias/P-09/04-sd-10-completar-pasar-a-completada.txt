@@ -1,0 +1,7 @@
+# P-09 paso 04: SD-10 completar: pasar a COMPLETADA
+# Petición
+PATCH http://localhost:8081/api/donaciones/3/estado?estado=COMPLETADA
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":3,"usuarioId":5,"usuarioNombre":"Dona","usuarioApellido":"Noventa","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":2,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":450,"hemoglobina":13.5,"presionArterial":"120/80","estado":"COMPLETADA","observaciones":"SD-10","createdAt":"2026-10-03T08:10:30.27978","updatedAt":"2026-10-03T08:10:33.426805"}

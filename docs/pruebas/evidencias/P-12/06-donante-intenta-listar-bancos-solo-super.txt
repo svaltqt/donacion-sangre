@@ -1,0 +1,7 @@
+# P-12 paso 06: Donante intenta listar bancos (solo SUPER_ADMIN)
+# Petición
+GET http://localhost:8081/api/bancos
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 403)
+{"mensaje":"No tienes permisos para esta operación","error":"Acceso denegado","timestamp":"2026-10-03T08:00:40.5700407","status":403}

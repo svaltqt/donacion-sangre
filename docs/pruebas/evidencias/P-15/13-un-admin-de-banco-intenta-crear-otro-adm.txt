@@ -1,0 +1,10 @@
+# P-15 paso 13: Un admin de banco intenta crear otro administrador
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Otro","apellido":"Admin","correo":"otro.admin@test.com","celular":"3100000035","tipoDocumento":"CC","numeroDocumento":"1000000035","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 403)
+{"mensaje":"No tienes permisos para esta operación","error":"Acceso denegado","timestamp":"2026-10-03T08:27:24.8430891","status":403}

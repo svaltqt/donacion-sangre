@@ -1,0 +1,7 @@
+# P-06 paso 08: Matching de la solicitud 2 (A+): donantes compatibles y aptitud
+# Petición
+GET http://localhost:8081/api/matching/solicitud/2
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"solicitudId":2,"tipoSangreRequerido":"A+","bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","unidadesFaltantes":5,"donantesCompatibles":[{"usuarioId":3,"nombre":"Ana","apellido":"Prueba","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","distanciaKm":0.0,"aptoParaDonar":true,"diasDesdeUltimaDonacion":null},{"usuarioId":4,"nombre":"Dona","apellido":"Ochentaynueve","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","distanciaKm":0.0,"aptoParaDonar":false,"diasDesdeUltimaDonacion":89},{"usuarioId":5,"nombre":"Dona","apellido":"Noventa","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","distanciaKm":0.0,"aptoParaDonar":true,"diasDesdeUltimaDonacion":90},{"usuarioId":6,"nombre":"Omar","apellido":"Negativo","tipoSangre":"O-","ciudad":"Medellín","departamento":"Antioquia","distanciaKm":0.0,"aptoParaDonar":true,"diasDesdeUltimaDonacion":null}],"totalEncontrados":4}

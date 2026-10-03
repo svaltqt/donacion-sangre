@@ -1,0 +1,10 @@
+# OBS-03 paso 07: Control: admin.envigado crea una solicitud en su banco
+# Petición
+POST http://localhost:8081/api/solicitudes
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":2,"tipoSangre":"B-","unidadesNecesarias":2,"urgencia":"BAJA","motivo":"Control OBS-03","fechaLimite":"2026-10-08"}
+
+# Respuesta (HTTP 201)
+{"id":8,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesNecesarias":2,"unidadesRecibidas":0,"unidadesFaltantes":2,"urgencia":"BAJA","motivo":"Control OBS-03","pacienteReferencia":null,"fechaLimite":"2026-10-08","estado":"ACTIVA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T08:27:14.116615","updatedAt":"2026-10-03T08:27:14.116615"}

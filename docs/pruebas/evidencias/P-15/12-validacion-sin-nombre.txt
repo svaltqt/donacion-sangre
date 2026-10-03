@@ -1,0 +1,10 @@
+# P-15 paso 12: Validacion: sin nombre
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"","apellido":"Admin","correo":"otro.admin@test.com","celular":"3100000034","tipoDocumento":"CC","numeroDocumento":"1000000034","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"error":"Error de validación","errores":{"nombre":"El nombre es obligatorio"},"timestamp":"2026-10-03T08:27:24.591575","status":400}

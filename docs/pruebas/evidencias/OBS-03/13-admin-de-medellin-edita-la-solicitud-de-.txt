@@ -1,0 +1,10 @@
+# OBS-03 paso 13: Admin de Medellin edita la solicitud de Envigado (PUT)
+# Petición
+PUT http://localhost:8081/api/solicitudes/8
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":2,"tipoSangre":"B-","unidadesNecesarias":99,"urgencia":"ALTA","motivo":"Editada por otro banco","fechaLimite":"2026-10-08","estado":"ACTIVA"}
+
+# Respuesta (HTTP 200)
+{"id":8,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesNecesarias":99,"unidadesRecibidas":0,"unidadesFaltantes":99,"urgencia":"ALTA","motivo":"Editada por otro banco","pacienteReferencia":null,"fechaLimite":"2026-10-08","estado":"ACTIVA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T08:27:14.116615","updatedAt":"2026-10-03T08:27:15.276644"}

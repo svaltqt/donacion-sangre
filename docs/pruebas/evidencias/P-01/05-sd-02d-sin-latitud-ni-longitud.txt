@@ -1,0 +1,9 @@
+# P-01 paso 05: SD-02d sin latitud ni longitud
+# Petición
+POST http://localhost:8081/api/v1/auth/registro
+Content-Type: application/json
+
+{"tipoDocumento":"CC","numeroDocumento":"1000000013","nombre":"Diana","apellido":"SinUbicacion","correo":"diana.sinubicacion@test.com","celular":"3000000013","contrasena":"<omitida>","tipoSangre":"AB+","fechaNacimiento":"1995-05-10","genero":"FEMENINO","pesoKg":60,"ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"error":"Error de validación","errores":{"latitud":"La latitud es obligatoria","longitud":"La longitud es obligatoria"},"timestamp":"2026-10-03T08:00:31.8174784","status":400}

@@ -1,0 +1,9 @@
+# P-07 paso 01: Login valido del administrador de banco
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"admin.banco@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":1,"nombre":"Admin","apellido":"Banco","correo":"admin.banco@test.com","tipoSangre":"O+","rol":"ADMIN_BANCO"}}

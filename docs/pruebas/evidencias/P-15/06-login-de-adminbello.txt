@@ -1,0 +1,9 @@
+# P-15 paso 06: Login de admin.bello
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"admin.bello@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":8,"nombre":"Admin","apellido":"Bello","correo":"admin.bello@test.com","tipoSangre":"O+","rol":"ADMIN_BANCO"}}

@@ -1,0 +1,10 @@
+# OBS-03 paso 01: Crear administrador admin.envigado@test.com
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Admin","apellido":"Envigado","correo":"admin.envigado@test.com","celular":"3100000031","tipoDocumento":"CC","numeroDocumento":"1000000031","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"El correo ya está registrado","error":"Error de negocio","timestamp":"2026-10-03T08:27:12.6721431","status":400}

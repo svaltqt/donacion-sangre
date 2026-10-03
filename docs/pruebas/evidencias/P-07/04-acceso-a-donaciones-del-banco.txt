@@ -1,0 +1,7 @@
+# P-07 paso 04: Acceso a donaciones del banco
+# Petición
+GET http://localhost:8081/api/donaciones/banco/1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

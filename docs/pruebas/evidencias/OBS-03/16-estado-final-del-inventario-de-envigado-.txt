@@ -1,0 +1,6 @@
+# OBS-03 paso 16: Estado final del inventario de Envigado (lectura publica)
+# Petición
+GET http://localhost:8081/api/inventario/banco/2
+
+# Respuesta (HTTP 200)
+[{"id":4,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesDisponibles":0,"unidadesMinimas":5,"bajoStock":true,"updatedAt":"2026-10-03T08:27:14.794648"},{"id":5,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"A-","unidadesDisponibles":9,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T08:27:14.370131"}]

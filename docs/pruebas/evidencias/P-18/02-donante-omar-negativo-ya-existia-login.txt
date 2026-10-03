@@ -1,0 +1,9 @@
+# P-18 paso 02: Donante Omar Negativo ya existia: login
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"omar.negativo@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":6,"nombre":"Omar","apellido":"Negativo","correo":"omar.negativo@test.com","tipoSangre":"O-","rol":"DONANTE"}}

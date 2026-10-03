@@ -1,0 +1,7 @@
+# P-13 paso 10: Un admin de banco no accede a las metricas globales
+# Petición
+GET http://localhost:8081/api/inventario/bajo-stock
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 403)
+{"mensaje":"No tienes permisos para esta operación","error":"Acceso denegado","timestamp":"2026-10-03T08:27:21.8210417","status":403}

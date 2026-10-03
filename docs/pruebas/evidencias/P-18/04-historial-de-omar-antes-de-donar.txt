@@ -1,0 +1,7 @@
+# P-18 paso 04: Historial de Omar antes de donar
+# Petición
+GET http://localhost:8081/api/donaciones/usuario/6/historial
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

@@ -1,0 +1,7 @@
+# P-06 paso 06: Historial previo hace 89 dias (Dona89)
+# Petición
+GET http://localhost:8081/api/donaciones/usuario/4/historial
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":1,"usuarioId":4,"usuarioNombre":"Dona","usuarioApellido":"Ochentaynueve","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":null,"fechaDonacion":"2026-07-06","tipoSangre":"O+","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"COMPLETADA","observaciones":null,"createdAt":"2026-10-03T08:09:57.280339","updatedAt":"2026-10-03T08:09:57.280339"}]

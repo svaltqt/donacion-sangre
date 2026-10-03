@@ -1,0 +1,7 @@
+# OBS-02 paso 05: Dona90 lee el historial de Ana
+# Petición
+GET http://localhost:8081/api/donaciones/usuario/3/historial
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

@@ -1,0 +1,7 @@
+# P-14 paso 09: Desactivar Bello
+# Petición
+PATCH http://localhost:8081/api/bancos/4/desactivar
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 204)
+

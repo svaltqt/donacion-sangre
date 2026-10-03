@@ -1,0 +1,10 @@
+# P-09 paso 03: SD-10 completar: guardar datos clinicos (450 ml, 13.5 g/dL, 120/80)
+# Petición
+PUT http://localhost:8081/api/donaciones/3
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"usuarioId":5,"bancoId":1,"solicitudId":2,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":450,"hemoglobina":13.5,"presionArterial":"120/80","observaciones":"SD-10","estado":"PENDIENTE"}
+
+# Respuesta (HTTP 200)
+{"id":3,"usuarioId":5,"usuarioNombre":"Dona","usuarioApellido":"Noventa","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":2,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":450,"hemoglobina":13.5,"presionArterial":"120/80","estado":"PENDIENTE","observaciones":"SD-10","createdAt":"2026-10-03T08:10:30.27978","updatedAt":"2026-10-03T08:10:30.27978"}

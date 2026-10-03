@@ -1,0 +1,7 @@
+# OBS-03 paso 14: Admin de Medellin lista las donaciones de Envigado (datos clinicos de donantes)
+# Petición
+GET http://localhost:8081/api/donaciones/banco/2
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

@@ -1,0 +1,10 @@
+# OBS-03 paso 08: Admin de Medellin crea inventario A- en Envigado
+# Petición
+POST http://localhost:8081/api/inventario
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":2,"tipoSangre":"A-","unidadesDisponibles":9,"unidadesMinimas":5}
+
+# Respuesta (HTTP 201)
+{"id":5,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"A-","unidadesDisponibles":9,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T08:27:14.370131"}

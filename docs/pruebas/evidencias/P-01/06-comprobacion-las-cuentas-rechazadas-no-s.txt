@@ -1,0 +1,9 @@
+# P-01 paso 06: Comprobacion: las cuentas rechazadas no se crearon (2b/2c/2d)
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"carla.liviana@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"Credenciales inválidas","error":"Error de negocio","timestamp":"2026-10-03T08:00:32.1709875","status":400}

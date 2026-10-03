@@ -1,0 +1,7 @@
+# P-18 paso 12: 3. Admin: completar la donacion
+# Petición
+PATCH http://localhost:8081/api/donaciones/5/estado?estado=COMPLETADA
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":5,"usuarioId":6,"usuarioNombre":"Omar","usuarioApellido":"Negativo","usuarioTipoSangre":"O-","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":14.0,"presionArterial":"118/78","estado":"COMPLETADA","observaciones":"SD-19","createdAt":"2026-10-03T08:10:36.997881","updatedAt":"2026-10-03T08:10:38.144229"}

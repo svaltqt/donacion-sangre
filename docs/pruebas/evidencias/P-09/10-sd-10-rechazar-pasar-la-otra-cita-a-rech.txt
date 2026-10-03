@@ -1,0 +1,7 @@
+# P-09 paso 10: SD-10 rechazar: pasar la otra cita a RECHAZADA
+# Petición
+PATCH http://localhost:8081/api/donaciones/4/estado?estado=RECHAZADA
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":4,"usuarioId":4,"usuarioNombre":"Dona","usuarioApellido":"Ochentaynueve","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":2,"fechaDonacion":"2026-10-04","tipoSangre":"O+","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"RECHAZADA","observaciones":null,"createdAt":"2026-10-03T08:10:31.558001","updatedAt":"2026-10-03T08:10:31.558001"}

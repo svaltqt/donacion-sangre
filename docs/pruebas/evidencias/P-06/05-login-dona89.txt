@@ -1,0 +1,9 @@
+# P-06 paso 05: Login Dona89
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"dona89@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":4,"nombre":"Dona","apellido":"Ochentaynueve","correo":"dona89@test.com","tipoSangre":"O+","rol":"DONANTE"}}

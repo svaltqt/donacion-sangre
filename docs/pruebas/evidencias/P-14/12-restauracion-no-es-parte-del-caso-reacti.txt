@@ -1,0 +1,10 @@
+# P-14 paso 12: Restauracion (no es parte del caso): reactivar Bello para P-15
+# Petición
+PUT http://localhost:8081/api/bancos/4
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Banco Prueba Bello","nit":"900000003-1","direccion":"Calle 50 # 50-50","ciudad":"Bello","departamento":"Antioquia","telefono":"6040000003","correo":"contacto.bello@test.com","latitud":6.3373,"longitud":-75.5579,"horarioApertura":"07:00:00","horarioCierre":"18:00:00","activo":true,"adminId":1}
+
+# Respuesta (HTTP 200)
+{"id":4,"nombre":"Banco Prueba Bello","nit":"900000003-1","direccion":"Calle 50 # 50-50","ciudad":"Bello","departamento":"Antioquia","telefono":"6040000003","correo":"contacto.bello@test.com","latitud":6.3373,"longitud":-75.5579,"horarioApertura":"07:00:00","horarioCierre":"18:00:00","activo":true,"admin":{"id":1,"nombre":"Admin","apellido":"Banco","correo":"admin.banco@test.com"},"createdAt":"2026-10-03T08:00:41.333547","updatedAt":"2026-10-03T08:00:43.195099","distanciaKm":null}

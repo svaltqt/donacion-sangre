@@ -1,0 +1,10 @@
+# P-11 paso 06: Crear segunda solicitud para cancelarla
+# Petición
+POST http://localhost:8081/api/solicitudes
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":1,"tipoSangre":"O-","unidadesNecesarias":3,"urgencia":"ALTA","motivo":"Cirug\u00eda programada","pacienteReferencia":"PAC-001","fechaLimite":"2026-10-10"}
+
+# Respuesta (HTTP 201)
+{"id":7,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"O-","unidadesNecesarias":3,"unidadesRecibidas":0,"unidadesFaltantes":3,"urgencia":"ALTA","motivo":"Cirugía programada","pacienteReferencia":"PAC-001","fechaLimite":"2026-10-10","estado":"ACTIVA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T08:00:38.48098","updatedAt":"2026-10-03T08:00:38.48098"}

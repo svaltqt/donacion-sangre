@@ -1,0 +1,12 @@
+# Petición (sin cabecera Authorization)
+POST http://localhost:8081/api/v1/auth/registro
+Content-Type: application/json
+
+{"tipoDocumento":"CC","numeroDocumento":"1000000003","nombre":"Super","apellido":"Admin",
+ "correo":"super.admin@test.com","celular":"3000000003","contrasena":"<omitida>","tipoSangre":"O+",
+ "fechaNacimiento":"1985-01-15","genero":"MASCULINO","pesoKg":70,
+ "latitud":6.2442,"longitud":-75.5812,"ciudad":"Medell\u00edn","departamento":"Antioquia",
+ "rolId":3}
+
+# Respuesta (HTTP 201); el JWT se sustituye por <JWT>
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":2,"nombre":"Super","apellido":"Admin","correo":"super.admin@test.com","tipoSangre":"O+","rol":"SUPER_ADMIN"}}

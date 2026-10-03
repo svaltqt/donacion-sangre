@@ -1,0 +1,7 @@
+# P-10 paso 08: Extra: ajuste que dejaria stock negativo
+# Petición
+PATCH http://localhost:8081/api/inventario/ajustar?bancoId=1&tipoSangre=AB-&cantidad=-100
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 409)
+{"mensaje":"No hay suficientes unidades disponibles. Stock actual: 5","error":"Conflicto de datos","timestamp":"2026-10-03T08:00:36.9864397","status":409}

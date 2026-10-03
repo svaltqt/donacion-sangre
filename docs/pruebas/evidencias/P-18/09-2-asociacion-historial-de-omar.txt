@@ -1,0 +1,7 @@
+# P-18 paso 09: 2. Asociacion: historial de Omar
+# Petición
+GET http://localhost:8081/api/donaciones/usuario/6/historial
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":5,"usuarioId":6,"usuarioNombre":"Omar","usuarioApellido":"Negativo","usuarioTipoSangre":"O-","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"PENDIENTE","observaciones":null,"createdAt":"2026-10-03T08:10:36.997881","updatedAt":"2026-10-03T08:10:36.997881"}]

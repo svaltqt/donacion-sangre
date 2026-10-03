@@ -1,0 +1,7 @@
+# CF-11 paso 05: Completar la donacion de 200 ml
+# Petición
+PATCH http://localhost:8081/api/donaciones/7/estado?estado=COMPLETADA
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":7,"usuarioId":10,"usuarioNombre":"Prueba","usuarioApellido":"DoscientosB","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":3,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":200,"hemoglobina":null,"presionArterial":null,"estado":"COMPLETADA","observaciones":null,"createdAt":"2026-10-03T08:27:25.897633","updatedAt":"2026-10-03T08:27:25.897633"}

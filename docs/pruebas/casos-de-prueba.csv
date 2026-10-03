@@ -1,0 +1,75 @@
+﻿ID,Historia,Título,Meta,Tipo de prueba,Tipo de caso,Precondiciones,Pasos,Resultado esperado,Criterio de aceptación,Criterio de rechazo,Set de datos
+P-01,HU-D01,Registro de donante,Comprobar el registro y las validaciones expresamente descritas en HU-D01.,Funcional manual,Positivo / negativo,Visitante sin cuenta; datos sintéticos conformes y escenarios de correo existente y dato por debajo del umbral indicado en la HU.,"1. Abrir el formulario de registro.
+2. Completar campos obligatorios con datos sintéticos válidos y enviar.
+3. Repetir con un correo ya registrado.
+4. Probar la condición de peso indicada en HU-D01.",El registro válido crea la cuenta de donante y completa el acceso según la HU. Los escenarios de correo repetido y peso por debajo del umbral se gestionan conforme a sus criterios.,Se cumplen los criterios aplicables de HU-D01.,El resultado observado contradice uno de esos criterios.,"SD-01, SD-02"
+P-02,HU-D02,Inicio y cierre de sesión del donante,"Verificar acceso, redirección y cierre de sesión conforme a HU-D02.",Funcional manual,Positivo / negativo,Existe una cuenta de donante de prueba.,"1. Iniciar sesión con credenciales válidas.
+2. Verificar el destino de acceso.
+3. Cerrar sesión.
+4. Intentar acceder nuevamente a la vista autenticada.
+5. Repetir con credenciales incorrectas.","El acceso válido, la salida y el rechazo de credenciales incorrectas corresponden a los criterios de HU-D02.",Se cumplen los criterios de HU-D02.,Se habilita el acceso con credenciales incorrectas o la sesión cerrada.,SD-03
+P-03,HU-D03,Dashboard del donante,"Verificar la información personal y el resumen de urgencias del dashboard, según HU-D03.",Comportamiento funcional,Positivo / estado inicial,Donante de prueba autenticado; preparar cuentas con y sin donaciones y datos de urgencias compatibles cuando estén disponibles.,"1. Abrir el inicio del donante.
+2. Revisar tipo de sangre, disponibilidad para donar, donaciones completadas y resumen de urgencias.
+3. Repetir con una cuenta sin donaciones.",La información corresponde a la cuenta y los estados iniciales y resumen se presentan conforme a los criterios de HU-D03.,Los datos y estados corresponden a HU-D03.,La vista muestra información ajena o contradice sus criterios.,SD-04
+P-04,HU-D04,Consulta y filtros de urgencias,"Verificar listado, filtros por nivel y compatibilidad, orden y estado sin resultados, según HU-D04.",Comportamiento funcional,Positivo / alterno / vacío,"Donante de prueba autenticado; solicitudes activas de diferentes niveles y tipos, además de un escenario sin coincidencias.","1. Abrir Urgencias.
+2. Revisar listado y orden.
+3. Aplicar filtro de nivel.
+4. Activar filtro de compatibilidad.
+5. Aplicar criterios sin coincidencias.","El listado, filtros y estado sin coincidencias corresponden a los criterios de HU-D04.",Cada filtro limita los resultados y el estado vacío se presenta según HU-D04.,Los resultados contradicen los filtros seleccionados.,SD-05
+P-05,HU-D05,Mapa de bancos cercanos,"Verificar ubicación, radio de búsqueda y consulta de información de bancos, según HU-D05.",Comportamiento funcional,Positivo / alterno,Donante de prueba y ubicaciones sintéticas de bancos dentro y fuera del radio; permiso de ubicación concedido.,"1. Abrir el mapa y responder al permiso de ubicación.
+2. Revisar el centro y bancos mostrados.
+3. Cambiar el radio de búsqueda.
+4. Seleccionar un marcador y revisar la información disponible.",El mapa y sus resultados cambian y presentan la información según los criterios de HU-D05 y el permiso otorgado.,Se cumple el comportamiento aplicable de HU-D05.,El mapa ignora la selección de radio o muestra información que no corresponde.,SD-06
+P-06,HU-D06,Triaje y programación de donación,"Verificar la secuencia de triaje, elegibilidad y creación de cita, según HU-D06.",Comportamiento funcional,Positivo / alterno,Donante y urgencia de prueba compatibles; respuestas sintéticas sin banderas para el criterio de continuación; fecha futura disponible y cuenta que cumpla la condición temporal indicada en HU-D06.,"1. Desde una urgencia compatible, iniciar y completar el triaje sin banderas.
+2. Comprobar que se habilita el paso de agenda.
+3. Seleccionar fecha futura y confirmar.
+4. Repetir con la condición temporal indicada en HU-D06.","El paso de agenda, estado de cita y bloqueo por la condición temporal corresponden a los criterios explícitos de HU-D06.",Se habilita la agenda sin banderas y la cita se crea como indica HU-D06; la condición temporal se gestiona según la HU.,El resultado contradice estos criterios.,SD-07
+P-07,HU-B01,Inicio de sesión y navegación del Administrador de Banco,Verificar acceso y opciones de navegación descritas en HU-B01.,Comportamiento funcional,Positivo / negativo,Cuenta de Administrador de Banco autorizada y credenciales de prueba.,"1. Iniciar sesión con credenciales válidas.
+2. Revisar destino y opciones de navegación.
+3. Repetir con credenciales incorrectas.",El acceso y opciones disponibles corresponden a los criterios de HU-B01; las credenciales incorrectas no habilitan el acceso.,Se cumplen los criterios de HU-B01.,El resultado contradice dichos criterios.,SD-08
+P-08,HU-B02,Dashboard del banco,"Verificar métricas, citas pendientes y alertas de inventario del banco, según HU-B02.",Comportamiento funcional,Positivo / alterno,"Cuenta de administrador asociada a un banco de prueba; datos para métricas, citas pendientes y stock por encima y por debajo del mínimo configurado.","1. Abrir el inicio del banco.
+2. Revisar métricas y citas pendientes.
+3. Consultar el indicador asociado a inventario bajo mínimo cuando exista.",El dashboard refleja los datos del banco y presenta citas y alertas conforme a HU-B02.,Cifras y estados corresponden a los datos de prueba y a HU-B02.,Se atribuyen datos a otro banco o no coincide con los criterios.,SD-09
+P-09,HU-B03,Completar o rechazar una donación,"Verificar captura de datos clínicos, cambio de estado e impacto en inventario según HU-B03.",Comportamiento funcional,Positivo / alterno,Citas de prueba pendientes; datos sintéticos válidos de unidades y campos clínicos; escenario de inasistencia.,"1. Abrir una cita pendiente e iniciar su finalización.
+2. Completar los campos solicitados con datos sintéticos válidos y confirmar.
+3. Verificar estado y datos guardados e inventario.
+4. Repetir con una cita de inasistencia y verificar su estado e inventario.","Los datos y estados de donación se guardan, el inventario aumenta para la donación completada y permanece sin cambios para la rechazada, según HU-B03.",Resultados y cambios de inventario coinciden con HU-B03.,"Estados, datos o inventario contradicen esos criterios.",SD-10
+P-10,HU-B04,Gestión del inventario del banco,"Verificar creación, ajuste de unidades e indicador bajo stock, según HU-B04.",Comportamiento funcional,Positivo / alterno,"Banco de prueba; tipo de sangre sin registro previo, registro existente y mínimo configurado; cantidades sintéticas válidas antes y después del mínimo.","1. Crear un registro de tipo de sangre y revisar su inclusión.
+2. Ajustar unidades mediante el control disponible.
+3. Comparar el stock con el mínimo configurado y revisar el indicador.","El registro se muestra, el ajuste modifica las unidades y el indicador refleja si el stock está por debajo del mínimo, según HU-B04.",Se cumplen los criterios de HU-B04.,"No se guarda el registro, no se aplica el ajuste o el indicador contradice el mínimo.",SD-11
+P-11,HU-B05,Publicar y gestionar solicitudes de urgencia,"Verificar creación, edición y cambio de estado de solicitudes, según HU-B05.",Comportamiento funcional,Positivo / alterno,Administrador de banco de prueba; datos sintéticos conformes a los campos de solicitud y solicitud activa existente.,"1. Crear una solicitud con los datos requeridos.
+2. Comprobar estado y disponibilidad para donantes.
+3. Editar los datos.
+4. Marcar como completada o cancelar y revisar la vista del donante.","La solicitud se crea activa, permite editarse y deja de aparecer al donante tras completar o cancelar, según HU-B05.",Estados y visibilidad corresponden a HU-B05.,Alguna acción válida no se refleja según sus criterios.,SD-12
+P-12,HU-S01,Inicio de sesión y navegación del Superadministrador,Verificar acceso y opciones de navegación descritas en HU-S01.,Comportamiento funcional,Positivo / negativo,Cuenta de Superadministrador autorizada y credenciales de prueba.,"1. Iniciar sesión con credenciales válidas.
+2. Revisar destino y opciones disponibles.
+3. Repetir con credenciales incorrectas.",El acceso y opciones disponibles corresponden a HU-S01; las credenciales incorrectas no habilitan el acceso.,Se cumplen los criterios de HU-S01.,El resultado contradice dichos criterios.,SD-13
+P-13,HU-S02,Dashboard global,Verificar métricas globales y accesos rápidos según HU-S02.,Comportamiento funcional,Positivo,"Superadministrador de prueba y datos disponibles de bancos, solicitudes e inventario.","1. Abrir el inicio del Superadministrador.
+2. Revisar las métricas globales.
+3. Revisar los accesos rápidos a gestión de bancos y reportes.",Las métricas y accesos se presentan conforme a los criterios de HU-S02.,Datos y accesos corresponden a HU-S02.,Faltan o difieren de los criterios.,SD-14
+P-14,HU-S03,Gestión de bancos,"Verificar creación, edición, desactivación y filtro por ciudad, según HU-S03.",Comportamiento funcional,Positivo / alterno,Superadministrador de prueba; banco nuevo y bancos de prueba en distintas ciudades.,"1. Crear un banco y revisar su aparición en la tabla.
+2. Editar un banco existente y verificar precarga de datos.
+3. Filtrar por ciudad.
+4. Desactivar un banco y revisar su disponibilidad para donantes.","Las acciones, datos precargados y visibilidad del banco desactivado corresponden a HU-S03.",Se cumplen los criterios de HU-S03.,Una acción o cambio de visibilidad contradice la HU.,SD-15
+P-15,HU-S04,Creación de administrador de banco,"Verificar creación del administrador desde el formulario de banco, su rol y selección asociada, según HU-S04.",Comportamiento funcional,Positivo,Superadministrador de prueba y formulario de creación o edición de banco disponible.,"1. Abrir el formulario de banco.
+2. Iniciar la creación de un administrador desde dicho formulario.
+3. Completar datos sintéticos y guardar.
+4. Revisar rol y selección en el banco.",El administrador queda creado con el rol y la asociación/selección indicados por HU-S04.,El flujo y asociación corresponden a HU-S04.,No se crea o la relación difiere del criterio.,SD-16
+P-16,HU-S05,Reporte de donaciones y Excel,"Verificar rango de fechas, indicadores, datos del reporte, descarga y estado sin registros, según HU-S05.",Comportamiento funcional,Positivo / vacío,Superadministrador de prueba; registros de donaciones en el rango seleccionado y rango sin registros.,"1. Elegir Reporte de Donaciones y definir un rango.
+2. Generar y revisar tabla e indicadores.
+3. Descargar el archivo con registros y comprobar contenido.
+4. Generar un rango sin registros y revisar mensaje y descarga.","Tabla, indicadores, contenido exportado y manejo del rango vacío corresponden a HU-S05.",Se cumplen los criterios de HU-S05 para ambos rangos.,"Datos, indicadores o comportamiento difieren.",SD-17
+P-17,HU-S06,Reporte de inventario y Excel,"Verificar filtro temporal, orden/indicadores de stock y contenido exportado según HU-S06.",Comportamiento funcional,Positivo / vacío,Superadministrador de prueba; registros de inventario con última actualización y stock respecto al mínimo configurado.,"1. Elegir Reporte de Inventario y definir un rango por última actualización.
+2. Generar y revisar orden, indicadores y datos.
+3. Descargar Excel y comprobar campos.","Rango, prioridad visual de registros críticos, indicadores y archivo corresponden a HU-S06.",Se cumplen los criterios de HU-S06.,El reporte o exportación contradice dichos criterios.,SD-18
+P-18,TRX-01,Flujo end-to-end de donación,"Verificar la continuidad y consistencia del flujo entre los tres roles, según TRX-01.",Comportamiento funcional / end-to-end,Positivo,"Cuentas de los tres roles, urgencia y donante de prueba compatibles, cita programable, banco e inventario controlados y acceso al reporte.","1. Como donante, completar triaje y agendar.
+2. Verificar asociación y estado de la cita.
+3. Como administrador, completar la donación con datos sintéticos.
+4. Verificar estado e inventario.
+5. Como Superadministrador, consultar el reporte.","Las asociaciones, estados, datos y efectos en inventario y reporte mantienen consistencia conforme a TRX-01.",El flujo y su información coinciden entre las etapas descritas en TRX-01.,Una etapa o relación contradice los criterios.,SD-19
+P-19,"HU-D02, HU-B01, HU-S01",Opciones visibles y navegación por rol,Revisar presentación y disponibilidad de las opciones de navegación para cada rol autenticado.,UI (manual),Positivo / roles,"Cuentas de prueba autorizadas para Donante, Administrador de Banco y Superadministrador.","1. Iniciar sesión con cada rol.
+2. Revisar opciones de navegación visibles.
+3. Abrir las opciones habilitadas y observar destino y presentación.","La navegación y las opciones visibles corresponden a los criterios de HU-D02, HU-B01 y HU-S01.",Cada rol presenta las opciones documentadas y los destinos esperados.,Opciones o navegación contradicen las HU.,SD-20
+P-20,Transversal UI,Presentación de vistas y estados de interacción,"Revisar visualmente formularios, controles, tablas, tarjetas y mensajes de los módulos incluidos, según criterios aplicables.",UI (manual),Positivo / vacío / validación,"Datos sintéticos para escenarios con resultados, sin resultados y validación; flujos disponibles de los módulos cubiertos.","1. Abrir las vistas de registro, urgencias/mapa, banco e informes.
+2. Revisar etiquetas, campos, controles y datos mostrados.
+3. Ejecutar acciones principales y observar mensajes, confirmaciones y estados sin resultados documentados.",Los elementos visibles permiten reconocer y operar los flujos; los estados y mensajes observables corresponden a los criterios de aceptación aplicables.,Vistas y estados se presentan de forma coherente con los criterios documentados.,Un elemento impide el flujo o contradice un criterio.,SD-21

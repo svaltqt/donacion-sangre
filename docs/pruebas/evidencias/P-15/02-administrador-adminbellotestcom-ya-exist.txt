@@ -1,0 +1,7 @@
+# P-15 paso 02: Administrador admin.bello@test.com ya existia: buscarlo
+# Petición
+GET http://localhost:8081/api/usuarios/rol/ADMIN_BANCO
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":1,"nombre":"Admin","apellido":"Banco","correo":"admin.banco@test.com","celular":"3000000002","tipoDocumento":"CC","numeroDocumento":"1000000002","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"ADMIN_BANCO","activo":true},{"id":7,"nombre":"Admin","apellido":"Envigado","correo":"admin.envigado@test.com","celular":"3100000031","tipoDocumento":"CC","numeroDocumento":"1000000031","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"ADMIN_BANCO","activo":true},{"id":8,"nombre":"Admin","apellido":"Bello","correo":"admin.bello@test.com","celular":"3100000032","tipoDocumento":"CC","numeroDocumento":"1000000032","tipoSangre":"O+","ciudad":"Medellín","departamento":"Antioquia","rol":"ADMIN_BANCO","activo":true}]

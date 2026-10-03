@@ -1,0 +1,9 @@
+# OBS-03 paso 04: Login admin.envigado
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"admin.envigado@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":7,"nombre":"Admin","apellido":"Envigado","correo":"admin.envigado@test.com","tipoSangre":"O+","rol":"ADMIN_BANCO"}}

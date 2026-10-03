@@ -1,0 +1,7 @@
+# P-02 paso 02: Vista autenticada con token
+# Petición
+GET http://localhost:8081/api/donaciones/usuario/3/historial
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

@@ -1,0 +1,9 @@
+# CF-11 paso 01: Registrar donante Prueba200b (O+)
+# Petición
+POST http://localhost:8081/api/v1/auth/registro
+Content-Type: application/json
+
+{"tipoDocumento":"CC","numeroDocumento":"1000000042","nombre":"Prueba","apellido":"DoscientosB","correo":"prueba200b@test.com","celular":"3000000042","contrasena":"<omitida>","tipoSangre":"O+","fechaNacimiento":"1995-05-10","genero":"FEMENINO","pesoKg":60,"latitud":6.2442,"longitud":-75.5812,"ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 201)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":10,"nombre":"Prueba","apellido":"DoscientosB","correo":"prueba200b@test.com","tipoSangre":"O+","rol":"DONANTE"}}

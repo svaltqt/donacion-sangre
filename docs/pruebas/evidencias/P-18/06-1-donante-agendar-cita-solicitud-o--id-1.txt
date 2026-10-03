@@ -1,0 +1,10 @@
+# P-18 paso 06: 1. Donante: agendar cita (solicitud O- id 1, banco Medellin)
+# Petición
+POST http://localhost:8081/api/donaciones
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"usuarioId":6,"bancoId":1,"solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450}
+
+# Respuesta (HTTP 201)
+{"id":5,"usuarioId":6,"usuarioNombre":"Omar","usuarioApellido":"Negativo","usuarioTipoSangre":"O-","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"PENDIENTE","observaciones":null,"createdAt":"2026-10-03T08:10:36.997881","updatedAt":"2026-10-03T08:10:36.997881"}

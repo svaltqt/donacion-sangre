@@ -1,0 +1,7 @@
+# CF-11 paso 03: Solicitud B+ (id 3) antes
+# Petición
+GET http://localhost:8081/api/solicitudes/3
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":3,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"B+","unidadesNecesarias":5,"unidadesRecibidas":1,"unidadesFaltantes":4,"urgencia":"BAJA","motivo":"Datos de prueba SD-05","pacienteReferencia":null,"fechaLimite":"2026-10-10","estado":"ACTIVA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T07:57:22.714516","updatedAt":"2026-10-03T08:26:11.335876"}

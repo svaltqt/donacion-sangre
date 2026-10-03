@@ -1,0 +1,5 @@
+﻿"ID",Fecha donación,Donante,Tipo sangre,Banco,Cantidad (ml),Hemoglobina (g/dL),Presión arterial,Estado,Observaciones,ID Solicitud
+3,2026-10-03,Dona Noventa,O+,Banco de Sangre Medellín,450,13.5,120/80,COMPLETADA,SD-10,2
+5,2026-10-03,Omar Negativo,O-,Banco de Sangre Medellín,450,14,118/78,COMPLETADA,SD-19,1
+6,2026-10-03,Prueba Doscientos,O+,Banco de Sangre Medellín,200,,,COMPLETADA,,3
+7,2026-10-03,Prueba DoscientosB,O+,Banco de Sangre Medellín,200,,,COMPLETADA,,3

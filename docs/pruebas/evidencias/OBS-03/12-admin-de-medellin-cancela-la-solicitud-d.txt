@@ -1,0 +1,7 @@
+# OBS-03 paso 12: Admin de Medellin cancela la solicitud de Envigado
+# Petición
+PATCH http://localhost:8081/api/solicitudes/8/estado?estado=CANCELADA
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":8,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesNecesarias":2,"unidadesRecibidas":0,"unidadesFaltantes":2,"urgencia":"BAJA","motivo":"Control OBS-03","pacienteReferencia":null,"fechaLimite":"2026-10-08","estado":"CANCELADA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T08:27:14.116615","updatedAt":"2026-10-03T08:27:14.116615"}

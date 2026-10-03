@@ -1,0 +1,10 @@
+# P-15 paso 10: Validacion: documento repetido
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Otro","apellido":"Admin","correo":"otro.admin@test.com","celular":"3100000032","tipoDocumento":"CC","numeroDocumento":"1000000032","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"El número de documento ya está registrado","error":"Error de negocio","timestamp":"2026-10-03T08:27:24.0965754","status":400}

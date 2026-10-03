@@ -1,0 +1,10 @@
+# P-10 paso 01: SD-11a crear AB- con 4 disponibles, minimo 5
+# Petición
+POST http://localhost:8081/api/inventario
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":1,"tipoSangre":"AB-","unidadesDisponibles":4,"unidadesMinimas":5}
+
+# Respuesta (HTTP 201)
+{"id":3,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"AB-","unidadesDisponibles":4,"unidadesMinimas":5,"bajoStock":true,"updatedAt":"2026-10-03T08:00:35.444797"}

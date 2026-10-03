@@ -1,0 +1,7 @@
+# P-18 paso 18: Extra: matching tras donar
+# Petición
+GET http://localhost:8081/api/matching/solicitud/1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"solicitudId":1,"tipoSangreRequerido":"O-","bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","unidadesFaltantes":4,"donantesCompatibles":[{"usuarioId":6,"nombre":"Omar","apellido":"Negativo","tipoSangre":"O-","ciudad":"Medellín","departamento":"Antioquia","distanciaKm":0.0,"aptoParaDonar":false,"diasDesdeUltimaDonacion":0}],"totalEncontrados":1}

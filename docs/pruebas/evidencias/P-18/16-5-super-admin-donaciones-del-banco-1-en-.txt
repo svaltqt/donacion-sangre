@@ -1,0 +1,7 @@
+# P-18 paso 16: 5. Super admin: donaciones del banco 1 en el rango de hoy
+# Petición
+GET http://localhost:8081/api/donaciones/banco/1/rango?inicio=2026-10-03&fin=2026-10-03
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":3,"usuarioId":5,"usuarioNombre":"Dona","usuarioApellido":"Noventa","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":2,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":450,"hemoglobina":13.5,"presionArterial":"120/80","estado":"COMPLETADA","observaciones":"SD-10","createdAt":"2026-10-03T08:10:30.27978","updatedAt":"2026-10-03T08:10:33.653805"},{"id":5,"usuarioId":6,"usuarioNombre":"Omar","usuarioApellido":"Negativo","usuarioTipoSangre":"O-","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":14.0,"presionArterial":"118/78","estado":"COMPLETADA","observaciones":"SD-19","createdAt":"2026-10-03T08:10:36.997881","updatedAt":"2026-10-03T08:10:38.364749"}]

@@ -1,0 +1,7 @@
+# OBS-02 paso 06: Ana intenta listar las donaciones de un banco
+# Petición
+GET http://localhost:8081/api/donaciones/banco/1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 403)
+{"mensaje":"No tienes permisos para esta operación","error":"Acceso denegado","timestamp":"2026-10-03T08:27:12.4541429","status":403}

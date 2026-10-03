@@ -1,0 +1,7 @@
+# P-12 paso 05: Super admin: todas las donaciones (datos de reportes)
+# Petición
+GET http://localhost:8081/api/donaciones
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]

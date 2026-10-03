@@ -1,0 +1,10 @@
+# P-06 paso 12: SD-07 89 dias: agendar cita (Dona89, hoy)
+# Petición
+POST http://localhost:8081/api/donaciones
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"usuarioId":4,"bancoId":1,"solicitudId":2,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":450}
+
+# Respuesta (HTTP 409)
+{"mensaje":"El donante debe esperar 1 días más para volver a donar.","error":"Conflicto de datos","timestamp":"2026-10-03T08:10:31.0289993","status":409}

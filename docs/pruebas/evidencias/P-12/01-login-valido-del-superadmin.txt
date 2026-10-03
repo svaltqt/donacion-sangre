@@ -1,0 +1,9 @@
+# P-12 paso 01: Login valido del superadmin
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"super.admin@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":2,"nombre":"Super","apellido":"Admin","correo":"super.admin@test.com","tipoSangre":"O+","rol":"SUPER_ADMIN"}}

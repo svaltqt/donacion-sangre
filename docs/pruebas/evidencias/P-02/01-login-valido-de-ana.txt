@@ -1,0 +1,9 @@
+# P-02 paso 01: Login valido de Ana
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"ana.prueba@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 200)
+{"token":"<JWT>","tipo":"Bearer","usuario":{"id":3,"nombre":"Ana","apellido":"Prueba","correo":"ana.prueba@test.com","tipoSangre":"O+","rol":"DONANTE"}}

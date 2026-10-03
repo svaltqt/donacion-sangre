@@ -1,0 +1,9 @@
+# P-01 paso 03: SD-02b documento repetido (datos nuevos)
+# Petición
+POST http://localhost:8081/api/v1/auth/registro
+Content-Type: application/json
+
+{"tipoDocumento":"CC","numeroDocumento":"1000000001","nombre":"Beto","apellido":"Nuevo","correo":"beto.nuevo@test.com","celular":"3000000011","contrasena":"<omitida>","tipoSangre":"A+","fechaNacimiento":"1995-05-10","genero":"FEMENINO","pesoKg":70,"latitud":6.2442,"longitud":-75.5812,"ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"El número de documento ya está registrado","error":"Error de negocio","timestamp":"2026-10-03T08:00:31.2054787","status":400}

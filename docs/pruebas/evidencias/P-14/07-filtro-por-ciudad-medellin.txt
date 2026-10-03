@@ -1,0 +1,7 @@
+# P-14 paso 07: Filtro por ciudad: Medellin
+# Petición
+GET http://localhost:8081/api/bancos/ciudad/Medell%C3%ADn
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":1,"nombre":"Banco de Sangre Medellín","nit":"900000001-1","direccion":"Calle 50 # 45-10","ciudad":"Medellín","departamento":"Antioquia","telefono":"6040000001","correo":"contacto.900000001@test.com","latitud":6.2442,"longitud":-75.5812,"horarioApertura":"07:00:00","horarioCierre":"18:00:00","activo":true,"admin":{"id":1,"nombre":"Admin","apellido":"Banco","correo":"admin.banco@test.com"},"createdAt":"2026-10-03T07:57:21.441539","updatedAt":"2026-10-03T07:57:21.441539","distanciaKm":null}]

@@ -1,0 +1,7 @@
+# P-10 paso 02: Listado del inventario del banco
+# Petición
+GET http://localhost:8081/api/inventario/banco/1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[{"id":1,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"O+","unidadesDisponibles":3,"unidadesMinimas":5,"bajoStock":true,"updatedAt":"2026-10-03T07:57:22.136514"},{"id":2,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"A+","unidadesDisponibles":10,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T07:57:22.214516"},{"id":3,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"AB-","unidadesDisponibles":4,"unidadesMinimas":5,"bajoStock":true,"updatedAt":"2026-10-03T08:00:35.444797"}]

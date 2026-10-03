@@ -1,0 +1,10 @@
+# P-10 paso 04: SD-11b crear O+ duplicado
+# Petición
+POST http://localhost:8081/api/inventario
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":1,"tipoSangre":"O+","unidadesDisponibles":10,"unidadesMinimas":5}
+
+# Respuesta (HTTP 409)
+{"mensaje":"Ya existe inventario para el tipo O+ en este banco.","error":"Conflicto de datos","timestamp":"2026-10-03T08:00:36.1058232","status":409}

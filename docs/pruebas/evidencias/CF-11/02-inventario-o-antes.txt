@@ -1,0 +1,6 @@
+# CF-11 paso 02: Inventario O+ antes
+# Petición
+GET http://localhost:8081/api/inventario/banco/1
+
+# Respuesta (HTTP 200)
+[{"id":1,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"O+","unidadesDisponibles":4,"unidadesMinimas":5,"bajoStock":true,"updatedAt":"2026-10-03T08:10:33.654806"},{"id":2,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"A+","unidadesDisponibles":10,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T07:57:22.214516"},{"id":3,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"AB-","unidadesDisponibles":5,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T08:00:36.576438"}]

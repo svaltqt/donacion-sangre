@@ -1,0 +1,7 @@
+# P-11 paso 07: Cancelar la segunda solicitud
+# Petición
+PATCH http://localhost:8081/api/solicitudes/7/estado?estado=CANCELADA
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":7,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"O-","unidadesNecesarias":3,"unidadesRecibidas":0,"unidadesFaltantes":3,"urgencia":"ALTA","motivo":"Cirugía programada","pacienteReferencia":"PAC-001","fechaLimite":"2026-10-10","estado":"CANCELADA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T08:00:38.48098","updatedAt":"2026-10-03T08:00:38.48098"}

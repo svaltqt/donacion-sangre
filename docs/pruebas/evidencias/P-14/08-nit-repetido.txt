@@ -1,0 +1,10 @@
+# P-14 paso 08: NIT repetido
+# Petición
+POST http://localhost:8081/api/bancos
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Otro Banco","nit":"900000003-1","direccion":"Calle 50 # 50-50","ciudad":"Bello","departamento":"Antioquia","telefono":"6040000003","correo":"contacto.bello@test.com","latitud":6.3373,"longitud":-75.5579,"horarioApertura":"07:00:00","horarioCierre":"18:00:00","activo":true,"adminId":1}
+
+# Respuesta (HTTP 409)
+{"mensaje":"Ya existe un banco con el NIT: 900000003-1","error":"Conflicto de datos","timestamp":"2026-10-03T08:00:42.9355789","status":409}

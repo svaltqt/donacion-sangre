@@ -1,0 +1,10 @@
+# P-18 paso 11: 3. Admin: guardar datos clinicos (14.0 g/dL, 118/78)
+# Petición
+PUT http://localhost:8081/api/donaciones/5
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"usuarioId":6,"bancoId":1,"solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":14.0,"presionArterial":"118/78","observaciones":"SD-19","estado":"PENDIENTE"}
+
+# Respuesta (HTTP 200)
+{"id":5,"usuarioId":6,"usuarioNombre":"Omar","usuarioApellido":"Negativo","usuarioTipoSangre":"O-","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":1,"fechaDonacion":"2026-10-03","tipoSangre":"O-","cantidadMl":450,"hemoglobina":14.0,"presionArterial":"118/78","estado":"PENDIENTE","observaciones":"SD-19","createdAt":"2026-10-03T08:10:36.997881","updatedAt":"2026-10-03T08:10:36.997881"}

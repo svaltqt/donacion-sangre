@@ -1,0 +1,7 @@
+# P-06 paso 10: Verificar asociacion de la cita
+# Petición
+GET http://localhost:8081/api/donaciones/3
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":3,"usuarioId":5,"usuarioNombre":"Dona","usuarioApellido":"Noventa","usuarioTipoSangre":"O+","bancoId":1,"bancoNombre":"Banco de Sangre Medellín","solicitudId":2,"fechaDonacion":"2026-10-03","tipoSangre":"O+","cantidadMl":450,"hemoglobina":null,"presionArterial":null,"estado":"PENDIENTE","observaciones":null,"createdAt":"2026-10-03T08:10:30.27978","updatedAt":"2026-10-03T08:10:30.27978"}

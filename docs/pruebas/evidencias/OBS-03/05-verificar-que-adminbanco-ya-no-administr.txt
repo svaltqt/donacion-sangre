@@ -1,0 +1,7 @@
+# OBS-03 paso 05: Verificar que admin.banco ya no administra Envigado
+# Petición
+GET http://localhost:8081/api/bancos/2
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":2,"nombre":"Banco de Sangre Envigado","nit":"900000004-1","direccion":"Carrera 43A # 35-20","ciudad":"Envigado","departamento":"Antioquia","telefono":"6040000004","correo":"contacto.900000004@test.com","latitud":6.1759,"longitud":-75.5917,"horarioApertura":"07:00:00","horarioCierre":"18:00:00","activo":true,"admin":{"id":7,"nombre":"Admin","apellido":"Envigado","correo":"admin.envigado@test.com"},"createdAt":"2026-10-03T07:57:21.727536","updatedAt":"2026-10-03T08:27:13.112672","distanciaKm":null}

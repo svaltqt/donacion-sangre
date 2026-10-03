@@ -1,0 +1,9 @@
+# P-02 paso 04: Login con clave incorrecta
+# Petición
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{"correo":"ana.prueba@test.com","contrasena":"<omitida>"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"Credenciales inválidas","error":"Error de negocio","timestamp":"2026-10-03T08:00:33.3790762","status":400}

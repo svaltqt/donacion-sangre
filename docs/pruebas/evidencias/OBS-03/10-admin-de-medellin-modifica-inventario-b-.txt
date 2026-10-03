@@ -1,0 +1,10 @@
+# OBS-03 paso 10: Admin de Medellin modifica inventario B- de Envigado (PUT)
+# Petición
+PUT http://localhost:8081/api/inventario/4
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":2,"tipoSangre":"B-","unidadesDisponibles":0,"unidadesMinimas":5}
+
+# Respuesta (HTTP 200)
+{"id":4,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"B-","unidadesDisponibles":0,"unidadesMinimas":5,"bajoStock":true,"updatedAt":"2026-10-03T08:27:14.612646"}

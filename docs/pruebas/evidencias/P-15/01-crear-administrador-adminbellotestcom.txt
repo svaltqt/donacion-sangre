@@ -1,0 +1,10 @@
+# P-15 paso 01: Crear administrador admin.bello@test.com
+# Petición
+POST http://localhost:8081/api/usuarios/admin-banco
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"nombre":"Admin","apellido":"Bello","correo":"admin.bello@test.com","celular":"3100000032","tipoDocumento":"CC","numeroDocumento":"1000000032","contrasena":"<omitida>","ciudad":"Medell\u00edn","departamento":"Antioquia"}
+
+# Respuesta (HTTP 400)
+{"mensaje":"El correo ya está registrado","error":"Error de negocio","timestamp":"2026-10-03T08:27:22.0430417","status":400}

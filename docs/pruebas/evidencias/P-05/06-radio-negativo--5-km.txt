@@ -1,0 +1,6 @@
+# P-05 paso 06: Radio negativo (-5 km)
+# Petición
+GET http://localhost:8081/api/bancos/radio?lat=6.2442&lon=-75.5812&radioKm=-5
+
+# Respuesta (HTTP 200)
+[]

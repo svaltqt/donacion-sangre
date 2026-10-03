@@ -1,0 +1,10 @@
+# OBS-03 paso 11: Admin de Medellin crea solicitud en Envigado
+# Petición
+POST http://localhost:8081/api/solicitudes
+Authorization: Bearer <JWT>
+Content-Type: application/json
+
+{"bancoId":2,"tipoSangre":"AB-","unidadesNecesarias":9,"urgencia":"ALTA","motivo":"Prueba OBS-03","fechaLimite":"2026-10-08"}
+
+# Respuesta (HTTP 201)
+{"id":9,"bancoId":2,"bancoNombre":"Banco de Sangre Envigado","bancoCiudad":"Envigado","tipoSangre":"AB-","unidadesNecesarias":9,"unidadesRecibidas":0,"unidadesFaltantes":9,"urgencia":"ALTA","motivo":"Prueba OBS-03","pacienteReferencia":null,"fechaLimite":"2026-10-08","estado":"ACTIVA","radioBusquedaKm":50.0,"createdAt":"2026-10-03T08:27:15.023647","updatedAt":"2026-10-03T08:27:15.023647"}

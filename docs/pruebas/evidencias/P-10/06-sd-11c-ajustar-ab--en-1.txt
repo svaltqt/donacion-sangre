@@ -1,0 +1,7 @@
+# P-10 paso 06: SD-11c ajustar AB- en +1
+# Petición
+PATCH http://localhost:8081/api/inventario/ajustar?bancoId=1&tipoSangre=AB-&cantidad=1
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+{"id":3,"bancoId":1,"bancoNombre":"Banco de Sangre Medellín","bancoCiudad":"Medellín","tipoSangre":"AB-","unidadesDisponibles":5,"unidadesMinimas":5,"bajoStock":false,"updatedAt":"2026-10-03T08:00:35.444797"}

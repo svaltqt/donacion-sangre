@@ -1,0 +1,7 @@
+# OBS-03 paso 15: Admin de Medellin lista las donaciones de Envigado por rango
+# Petición
+GET http://localhost:8081/api/donaciones/banco/2/rango?inicio=2020-01-01&fin=2026-10-03
+Authorization: Bearer <JWT>
+
+# Respuesta (HTTP 200)
+[]
